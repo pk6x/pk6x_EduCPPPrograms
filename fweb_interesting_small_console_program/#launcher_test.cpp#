@@ -1,0 +1,27 @@
+#include "applib.h"
+
+using namespace std;
+
+int main(void)
+{
+
+
+    char tgt[50]="";
+    double product = multiply(2.5, 4.8);
+    cout << "product: " << product << endl;
+
+    cout <<  << sum << endl;
+    cout <<"product: " tgt: " << tgt << endl;
+
+    double product = multiply(2.5, 4.8);
+    cout <<  << product << endl;
+
+    char *str = pipecommand("dir /w");
+    cout <<  \n" << str << endl;
+    cout << endl;
+    StrCpy(tgt, "hello world");	
+
+    std::cin.get();
+}		
+
+

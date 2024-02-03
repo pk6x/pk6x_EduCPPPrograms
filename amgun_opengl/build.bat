@@ -1,0 +1,1 @@
+clang++ -m32 -DGLEW_STATIC -I"src\include" -I"src\include\GLFW" -I"src\include\glew"   Run.cpp -o Run.exe -L"src\libs\Win32" -L"src\libs\GLFW\Win32" -lglfw3_mt -L"src\libs\glew\Win32" -lglew32s -lglew32 -lopengl32 -luser32 -lgdi32 -lshell32
