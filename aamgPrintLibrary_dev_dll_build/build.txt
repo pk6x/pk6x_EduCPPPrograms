@@ -1,0 +1,8 @@
+//Build "PrintNameAndAge.cpp"
+cl /D"PRINTNAMEANDAGE_DLL" /I:"include" /LD PrintNameAndAge.cpp /link /LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\lib\x64" /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22621.0\um\x64" /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22621.0\ucrt\x64"  /IMPLIB:'LIBCMT.lib' /IMPLIB:'kernel.lib' /IMPLIB:'libucrt.lib'
+
+//Build "PrintNameOnly.cpp"
+cl /D"PRINTNAMEONLY_DLL" /I:"include" /LD PrintNameOnly.cpp /link /LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\lib\x64" /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22621.0\um\x64" /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22621.0\ucrt\x64"  /IMPLIB:'LIBCMT.lib' /IMPLIB:'kernel.lib' /IMPLIB:'libucrt.lib'
+
+//Build "Main.cpp"
+cl /D"PRINTNAMEANDAGE_DLL" /D"PRINTNAMEONLY_DLL" /I:"include" Main.cpp PrintNameAndAge.obj PrintNameOnly.obj /link /LIBPATH:"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\lib\x64" /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22621.0\um\x64" /LIBPATH:"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22621.0\ucrt\x64"  /IMPLIB:'LIBCMT.lib' /IMPLIB:'kernel.lib' /IMPLIB:'libucrt.lib'
