@@ -1,5 +1,5 @@
 #include "Shared.h"
-#include "EntryPoint.cpp"
+#include "EntryPoint.h"
 
 
 class Launcher : public Application
